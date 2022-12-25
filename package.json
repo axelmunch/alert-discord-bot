@@ -1,0 +1,23 @@
+{
+  "name": "alert-bot",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "discord:register-commands": "node build/scripts/registerCommands.js",
+    "discord:unregister-command": "node build/scripts/unregisterCommand.js",
+    "discord:unregister-commands": "node build/scripts/unregisterCommands.js"
+  },
+  "author": "Axel Munch",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
