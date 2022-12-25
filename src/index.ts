@@ -1,5 +1,6 @@
 import { DiscordClient } from './DiscordClient.js'
 import { events } from './events/index.js'
+import { consoleInput } from './messages/consoleInput.js'
 
 const discordClient = await DiscordClient.getInstance()
 
@@ -12,3 +13,5 @@ for (const event of events) {
 }
 
 await discordClient.login()
+
+consoleInput()
